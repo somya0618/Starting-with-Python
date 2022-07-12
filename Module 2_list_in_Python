@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    },
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Pyolite",
+      "language": "python"
+    }
+  },
+  "nbformat_minor": 4,
+  "nbformat": 4,
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": "#create a list\n\nL = [\"Michael Jackson\", 10.1, 1982]\nL",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "execution_count": 12,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['Michael Jackson', 10.1, 1982]"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# Print the elements on each index\n\nprint('the same element using negative and positive indexing:\\n Postive:',L[0],\n'\\n Negative:' , L[-3]  )",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "the same element using negative and positive indexing:\n Postive: Michael Jackson \n Negative: Michael Jackson\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "print('the same element using negative and positive indexing:\\n Postive:',L[1],\n'\\n Negative:' , L[-2]  )",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "the same element using negative and positive indexing:\n Postive: 10.1 \n Negative: 10.1\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "print('the sameelement using negative and positive indexing: \\nPositive', L[2], '\\n Negative:', L[-1])",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "the sameelement using negative and positive indexing: \nPositive 1982 \n Negative: 1982\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "L[0]",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "execution_count": 18,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'Michael Jackson'"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "L[1]",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "execution_count": 20,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "10.1"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "L[2]",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "execution_count": 21,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "1982"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "#sample list\nL = [\"Michael Jackson\", 10.1,1982,\"MJ\",1]\nL",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "execution_count": 1,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['Michael Jackson', 10.1, 1982, 'MJ', 1]"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "#list sliciing\nL[3:5]\n",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "execution_count": 2,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['MJ', 1]"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "L[3][0]",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "execution_count": 3,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'M'"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "L[3][1]",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "execution_count": 4,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "'J'"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# use extend list to add element\nL = [\"Michael Jackson\", 10.2]\nL.extend(['pop', 10])\nL",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "execution_count": 6,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['Michael Jackson', 10.2, 'pop', 10]"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# use append to add elements to list\nL = [\"Michael Jackson\", 10.2]\nL.append(['pop', 10])\nL",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "execution_count": 7,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['Michael Jackson', 10.2, ['pop', 10]]"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# change elements\nA = ['disco', 10, 1.2]\nprint('Before change:', A)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "Before change: ['disco', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "A[0] = 'Hard rock'\nprint('After change:', A)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "After change: ['Hard rock', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# delete element to the list\ndel(A[0])\nA",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "execution_count": 11,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "[10, 1.2]"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# Split the string, default is by space\n\nA = ['Hard rock', 10, 1.2]\n\n'hard rock'.split()",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "execution_count": 12,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['hard', 'rock']"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# Split the string by comma\n\n'A,B,C,D'.split(',')",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "execution_count": 13,
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "['A', 'B', 'C', 'D']"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# Copy the list A\n\nA = [\"hard rock\", 10, 1.2]\nB = A\nprint('A:', A)\nprint('B:', B)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "A: ['hard rock', 10, 1.2]\nB: ['hard rock', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# if we change element in A, elemets in b is also changes as a consequences in case of copy\nA[0]= 'dance'\nprint('A:', A)\nprint('B:', B)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "A: ['dance', 10, 1.2]\nB: ['dance', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# Clone the list A\n\nC = A[:]\nprint('C:', C)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "C: ['dance', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# change in element in A\nA[0]= 'Banana'\nprint('A:', A)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "A: ['Banana', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "# check the change in C, in case of clone, nothing would be change after changing the list A\nprint('C:', C)",
+      "metadata": {
+        "trusted": true
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "name": "stdout",
+          "text": "C: ['dance', 10, 1.2]\n",
+          "output_type": "stream"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": "",
+      "metadata": {},
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
